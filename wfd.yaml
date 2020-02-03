@@ -5,4 +5,6 @@ description: The Dockerfile and Go program in this repository are from https://k
   name: container1
   ports:
   - containerPort: 80
+    name: frontend
   - containerPort: 8080
+    name: backend
