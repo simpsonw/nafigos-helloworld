@@ -1,0 +1,8 @@
+name: Nafigos HelloWorld
+description: The Dockerfile and Go program in this repository are from https://knative.dev/docs/serving/samples/hello-world/helloworld-go/index.html
+---
+- image: nafigostest/nafigos-helloworld
+  name: container1
+  ports:
+  - containerPort: 80
+  - containerPort: 8080
