@@ -4,7 +4,7 @@ description: The Dockerfile and Go program in this repository are from https://k
 - image: nafigostest/nafigos-helloworld
   name: container1
   ports:
-  - containerPort: 8a
+  - containerPort: 80
     name: frontend
 - image: nafigostest/nafigos-helloworld
   name: container2
