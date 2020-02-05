@@ -1,5 +1,5 @@
 name: Nafigos HelloWorld
-description: The Dockerfile and Go program in this repository are from https://knative.dev/docs/serving/samples/hello-world/helloworld-go/index.html
+description: This runs a simple hello world Go webapp behind an Nginx proxy
 build:
 - image: nafigostest/nafigos-webapp-nginx
   dockerfile: "Dockerfile"
