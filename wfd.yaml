@@ -3,14 +3,14 @@ description: This runs a simple hello world Go webapp behind an Nginx proxy
 build:
 - image: nafigostest/nafigos-webapp-nginx
   dockerfile: "Dockerfile"
-workflow: |
-  - image: {{image 1}}
-    name: nginx-container
-    ports:
-    - containerPort: 80
-      name: frontend
-  - image: training/webapp
-    name: webapp-container
-    ports:
-    - containerPort: 5000
-      name: backend
+---
+- image: {{image 1}}
+  name: nginx-container
+  ports:
+  - containerPort: 80
+    name: frontend
+- image: training/webapp
+  name: webapp-container
+  ports:
+  - containerPort: 5000
+    name: backend
