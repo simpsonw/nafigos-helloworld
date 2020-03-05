@@ -1,4 +1,4 @@
-name: Nafigos HelloWorld
+name: nafigos-helloworld
 description: This runs a simple hello world Go webapp behind an Nginx proxy
 build:
 - image: nafigostest/nafigos-webapp-nginx
