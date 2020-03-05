@@ -1,7 +1,7 @@
 name: nafigos-helloworld
 description: This runs a simple hello world Go webapp behind an Nginx proxy
 build:
-- image: nafigostest/nafigos-webapp-nginx:{{branch}}
+- image: nafigostest/nafigos-webapp-nginx
   dockerfile: "Dockerfile"
 workflow: |
   - image: {{image 1}}
