@@ -9,7 +9,7 @@ workflow: |
     name: nginx-container
     ports:
     - containerPort: 81
-      targetPort: 80
+      hostPort: 80
       name: frontend
   - image: training/webapp
     name: webapp-container
