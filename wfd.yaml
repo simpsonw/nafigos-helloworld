@@ -8,16 +8,11 @@ workflow: |
   - image: {{image 1}}
     name: nginx-container
     ports:
-    - containerPort: 80
+    - containerPort: 81
+      targetPort: 80
       name: frontend
   - image: training/webapp
     name: webapp-container
     ports:
     - containerPort: 5000
       name: backend
-  - image: training/webapp
-    name: webapp-container-two
-    ports:
-    - containerPort: 5001
-      hostPort: 5000
-      name: backend-two
