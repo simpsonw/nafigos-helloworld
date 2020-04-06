@@ -15,3 +15,9 @@ workflow: |
     ports:
     - containerPort: 5000
       name: backend
+  - image: training/webapp
+    name: webapp-container-two
+    ports:
+    - containerPort: 5001
+      hostPort: 5000
+      name: backend-two
