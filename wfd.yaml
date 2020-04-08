@@ -12,7 +12,7 @@ workflow: |
   - image: {{image 1}}
     name: nginx-container
     ports:
-    - containerPort: 81
+    - containerPort: 80
       name: frontend
     #      hostPort: 80
   - image: training/webapp
