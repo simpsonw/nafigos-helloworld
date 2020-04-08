@@ -4,7 +4,6 @@ type: container
 ports:
 - name: frontend
   port: 81
-  targetPort: 80
 build:
 - image: nafigostest/nafigos-webapp-nginx:master
   dockerfile: "Dockerfile"
@@ -14,6 +13,5 @@ workflow: |
     ports:
     - containerPort: 80
       name: frontend
-    #      hostPort: 80
   - image: training/webapp
     name: webapp-container
