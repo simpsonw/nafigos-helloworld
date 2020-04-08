@@ -4,6 +4,7 @@ type: container
 ports:
 - name: frontend
   port: 81
+  targetPort: frontend
 build:
 - image: nafigostest/nafigos-webapp-nginx:master
   dockerfile: "Dockerfile"
