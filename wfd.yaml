@@ -11,12 +11,9 @@ build:
 workflow: |
   - image: {{image 1}}
     name: nginx-container
-    ports:
-    - containerPort: 81
-      hostPort: 80
-      name: frontend
+    #    ports:
+    #    - containerPort: 81
+    #      hostPort: 80
+    #      name: frontend
   - image: training/webapp
     name: webapp-container
-    ports:
-    - containerPort: 5000
-      name: backend
