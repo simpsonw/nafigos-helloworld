@@ -2,7 +2,7 @@ name: nafigos-helloworld
 description: This runs a simple hello world Go webapp behind an Nginx proxy
 type: container
 build:
-- image: nafigostest/nafigos-webapp-nginx:{{branch}}
+- image: nafigostest/nafigos-webapp-nginx
   dockerfile: "Dockerfile"
 workflow: |
   - image: {{image 1}}
@@ -15,3 +15,6 @@ workflow: |
     ports:
     - containerPort: 5000
       name: backend
+      env:
+      - name: PROVIDER
+        value: nafigos
