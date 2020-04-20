@@ -15,6 +15,6 @@ workflow: |
     ports:
     - containerPort: 5000
       name: backend
-      env:
-      - name: PROVIDER
-        value: nafigos
+    env:
+    - name: PROVIDER
+      value: nafigos
