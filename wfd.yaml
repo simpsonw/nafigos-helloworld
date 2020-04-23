@@ -1,7 +1,7 @@
 name: nafigos-helloworld
 description: This runs a simple hello world Go webapp behind an Nginx proxy
 type: container
-ports:
+http_ports:
 - name: frontend
   port: 81
   targetPort: frontend
