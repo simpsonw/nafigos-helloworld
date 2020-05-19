@@ -2,105 +2,19 @@ build:
 - args: null
   dockerfile: Dockerfile
   image: nafigostest/nafigos-webapp-nginx
-commit:
-  Author:
-    Email: nafigos@cyverse.org
-    Name: Nafigos WorkflowDefinition
-    When: "2020-05-19T15:19:02Z"
-  Committer:
-    Email: nafigos@cyverse.org
-    Name: Nafigos WorkflowDefinition
-    When: "2020-05-19T15:19:02Z"
-  Hash:
-  - 92
-  - 145
-  - 57
-  - 84
-  - 254
-  - 171
-  - 78
-  - 249
-  - 152
-  - 194
-  - 219
-  - 39
-  - 17
-  - 153
-  - 243
-  - 108
-  - 19
-  - 240
-  - 162
-  - 164
-  Message: Default Nafigos commit message
-  PGPSignature: ""
-  ParentHashes:
-  - - 35
-    - 245
-    - 70
-    - 162
-    - 179
-    - 241
-    - 98
-    - 51
-    - 77
-    - 189
-    - 189
-    - 0
-    - 231
-    - 109
-    - 162
-    - 46
-    - 9
-    - 191
-    - 206
-    - 3
-  TreeHash:
-  - 72
-  - 208
-  - 12
-  - 134
-  - 215
-  - 165
-  - 15
-  - 148
-  - 236
-  - 27
-  - 112
-  - 239
-  - 231
-  - 201
-  - 212
-  - 173
-  - 61
-  - 97
-  - 17
-  - 73
+commit: null
 description: This runs a simple hello world Go webapp behind an Nginx proxy
 http_ports:
 - name: frontend
   port: 81
   targetPort: frontend
-id: br1vhbik8hnb3crotnc0
-nafigosWorkflow:
-- image: nafigostest/nafigos-webapp-nginx
-  name: nginx-container
-  ports:
-  - containerPort: 80
-    name: frontend
-  resources: {}
-- env:
-  - name: PROVIDER
-    value: nafigos
-  image: training/webapp
-  name: webapp-container
-  resources: {}
+id: ""
+nafigosWorkflow: null
 name: nafigos-helloworld
-owner: calvinmclean
 repository:
-  Branch: master
-  RawURL: https://github.com/calvinmclean/nafigos-helloworld
-  URL: github.com/calvinmclean/nafigos-helloworld
+  Branch: ""
+  RawURL: ""
+  URL: ""
 tcp_ports: null
 type: container
 workflow: |
