@@ -1,13 +1,129 @@
-name: nafigos-helloworld
+build:
+- args: null
+  dockerfile: Dockerfile
+  image: nafigostest/nafigos-webapp-nginx
+commit:
+  Author:
+    Email: calvinmclean@email.arizona.edu
+    Name: Calvin McLean
+    When: "2020-05-01T22:35:19Z"
+  Committer:
+    Email: calvinmclean@email.arizona.edu
+    Name: Calvin McLean
+    When: "2020-05-01T22:35:19Z"
+  Hash:
+  - 35
+  - 245
+  - 70
+  - 162
+  - 179
+  - 241
+  - 98
+  - 51
+  - 77
+  - 189
+  - 189
+  - 0
+  - 231
+  - 109
+  - 162
+  - 46
+  - 9
+  - 191
+  - 206
+  - 3
+  Message: |
+    merge
+  PGPSignature: ""
+  ParentHashes:
+  - - 0
+    - 206
+    - 109
+    - 69
+    - 121
+    - 251
+    - 26
+    - 214
+    - 44
+    - 241
+    - 202
+    - 225
+    - 248
+    - 195
+    - 195
+    - 90
+    - 205
+    - 255
+    - 59
+    - 136
+  - - 219
+    - 145
+    - 106
+    - 49
+    - 3
+    - 173
+    - 245
+    - 247
+    - 29
+    - 219
+    - 155
+    - 226
+    - 26
+    - 36
+    - 1
+    - 131
+    - 143
+    - 32
+    - 232
+    - 4
+  TreeHash:
+  - 236
+  - 47
+  - 203
+  - 207
+  - 0
+  - 33
+  - 48
+  - 62
+  - 82
+  - 18
+  - 110
+  - 151
+  - 97
+  - 224
+  - 52
+  - 210
+  - 145
+  - 175
+  - 55
+  - 85
 description: This runs a simple hello world Go webapp behind an Nginx proxy
-type: container
 http_ports:
 - name: frontend
   port: 81
   targetPort: frontend
-build:
+id: br1vhbik8hnb3crotnc0
+nafigosWorkflow:
 - image: nafigostest/nafigos-webapp-nginx
-  dockerfile: "Dockerfile"
+  name: nginx-container
+  ports:
+  - containerPort: 80
+    name: frontend
+  resources: {}
+- env:
+  - name: PROVIDER
+    value: nafigos
+  image: training/webapp
+  name: webapp-container
+  resources: {}
+name: nafigos-helloworld
+owner: calvinmclean
+repository:
+  Branch: master
+  RawURL: https://github.com/calvinmclean/nafigos-helloworld
+  URL: github.com/calvinmclean/nafigos-helloworld
+tcp_ports: null
+type: container
 workflow: |
   - image: {{image 1}}
     name: nginx-container
