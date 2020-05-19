@@ -7,7 +7,7 @@ HTTPPorts:
 - name: frontend
   port: 81
   targetPort: frontend
-Name: nafigos-helloworld
+Name: nafigos-helloworld-test
 RawWorkflow: |
   - image: {{image 1}}
     name: nginx-container
