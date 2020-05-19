@@ -1,14 +1,15 @@
-Build:
+build:
 - args: null
   dockerfile: Dockerfile
   image: nafigostest/nafigos-webapp-nginx
-Description: This runs a simple hello world Go webapp behind an Nginx proxy
-HTTPPorts:
+description: This runs a simple hello world Go webapp behind an Nginx proxy
+http_ports:
 - name: frontend
   port: 81
   targetPort: frontend
-Name: nafigos-helloworld-test
-RawWorkflow: |
+name: nafigos-helloworld-test
+type: container
+workflow: |
   - image: {{image 1}}
     name: nginx-container
     ports:
@@ -19,5 +20,3 @@ RawWorkflow: |
     env:
     - name: PROVIDER
       value: nafigos
-TCPPorts: null
-Type: container
