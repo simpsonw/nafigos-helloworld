@@ -10,7 +10,7 @@ http_ports:
   targetPort: frontend
 id: ""
 nafigosWorkflow: null
-name: nafigos-helloworld
+name: nafigos-helloworld-test
 repository:
   Branch: ""
   RawURL: ""
