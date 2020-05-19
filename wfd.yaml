@@ -1,7 +1,7 @@
 build:
 - dockerfile: Dockerfile
   image: nafigostest/nafigos-webapp-nginx
-description: This runs a simple hello world Go webapp behind an Nginx proxy
+description: test
 http_ports:
 - name: frontend
   port: 81
