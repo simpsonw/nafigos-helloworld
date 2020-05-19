@@ -4,99 +4,78 @@ build:
   image: nafigostest/nafigos-webapp-nginx
 commit:
   Author:
-    Email: calvinmclean@email.arizona.edu
-    Name: Calvin McLean
-    When: "2020-05-01T22:35:19Z"
+    Email: nafigos@cyverse.org
+    Name: Nafigos WorkflowDefinition
+    When: "2020-05-19T15:19:02Z"
   Committer:
-    Email: calvinmclean@email.arizona.edu
-    Name: Calvin McLean
-    When: "2020-05-01T22:35:19Z"
+    Email: nafigos@cyverse.org
+    Name: Nafigos WorkflowDefinition
+    When: "2020-05-19T15:19:02Z"
   Hash:
-  - 35
-  - 245
-  - 70
+  - 92
+  - 145
+  - 57
+  - 84
+  - 254
+  - 171
+  - 78
+  - 249
+  - 152
+  - 194
+  - 219
+  - 39
+  - 17
+  - 153
+  - 243
+  - 108
+  - 19
+  - 240
   - 162
-  - 179
-  - 241
-  - 98
-  - 51
-  - 77
-  - 189
-  - 189
-  - 0
-  - 231
-  - 109
-  - 162
-  - 46
-  - 9
-  - 191
-  - 206
-  - 3
-  Message: |
-    merge
+  - 164
+  Message: Default Nafigos commit message
   PGPSignature: ""
   ParentHashes:
-  - - 0
-    - 206
-    - 109
-    - 69
-    - 121
-    - 251
-    - 26
-    - 214
-    - 44
-    - 241
-    - 202
-    - 225
-    - 248
-    - 195
-    - 195
-    - 90
-    - 205
-    - 255
-    - 59
-    - 136
-  - - 219
-    - 145
-    - 106
-    - 49
-    - 3
-    - 173
+  - - 35
     - 245
-    - 247
-    - 29
-    - 219
-    - 155
-    - 226
-    - 26
-    - 36
-    - 1
-    - 131
-    - 143
-    - 32
-    - 232
-    - 4
+    - 70
+    - 162
+    - 179
+    - 241
+    - 98
+    - 51
+    - 77
+    - 189
+    - 189
+    - 0
+    - 231
+    - 109
+    - 162
+    - 46
+    - 9
+    - 191
+    - 206
+    - 3
   TreeHash:
+  - 72
+  - 208
+  - 12
+  - 134
+  - 215
+  - 165
+  - 15
+  - 148
   - 236
-  - 47
-  - 203
-  - 207
-  - 0
-  - 33
-  - 48
-  - 62
-  - 82
-  - 18
-  - 110
-  - 151
+  - 27
+  - 112
+  - 239
+  - 231
+  - 201
+  - 212
+  - 173
+  - 61
   - 97
-  - 224
-  - 52
-  - 210
-  - 145
-  - 175
-  - 55
-  - 85
+  - 17
+  - 73
 description: This runs a simple hello world Go webapp behind an Nginx proxy
 http_ports:
 - name: frontend
