@@ -8,6 +8,10 @@ http_ports:
   port: 81
   targetPort: frontend
 name: nafigos-helloworld-test
+repository:
+  Branch: ""
+  RawURL: ""
+  URL: ""
 type: container
 workflow: |
   - image: {{image 1}}
