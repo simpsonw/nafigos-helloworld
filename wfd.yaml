@@ -6,8 +6,7 @@ http_ports:
 - name: frontend
   port: 81
   targetPort: frontend
-name: nafigos-helloworld
-repository: {}
+name: test
 type: container
 workflow: |
   - image: {{image 1}}
