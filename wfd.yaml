@@ -1,6 +1,6 @@
 build:
 - dockerfile: Dockerfile
-  image: nafigostest/nafigos-webapp-nginx:latest
+  image: my-image
 description: test
 http_ports:
 - name: frontend
