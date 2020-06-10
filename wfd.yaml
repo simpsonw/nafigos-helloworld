@@ -1,16 +1,12 @@
 build:
 - dockerfile: Dockerfile
-  image: my-image
+  image: nafigostest/nafigos-webapp-nginx:latest
 description: test
 http_ports:
 - name: frontend
   port: 81
   targetPort: frontend
-name: new name
-tcp_ports:
-- name: my-port
-  port: 1234
-  targetPort: 1234
+name: nafigos-helloworld
 type: container
 workflow: |
   - image: {{image 1}}
