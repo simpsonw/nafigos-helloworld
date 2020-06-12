@@ -4,7 +4,7 @@ build:
 description: test
 http_ports:
 - name: frontend
-  port: 80
+  port: 81
   targetPort: frontend
 name: new name
 type: container
