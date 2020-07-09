@@ -2,6 +2,7 @@ build:
 - dockerfile: Dockerfile
   image: nafigostest/nafigos-webapp-nginx:latest
 description: test
+run_on_build: true
 http_ports:
 - name: frontend
   port: 81
