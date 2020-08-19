@@ -1,6 +1,6 @@
 build:
 - dockerfile: Dockerfile
-  image: foobar
+  image: .-foobar
 description: test
 http_ports:
 - name: frontend
